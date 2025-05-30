@@ -1,0 +1,93 @@
+
+/* colors */
+/* variables */
+$color-lightest: #F8F9FA;
+$color-light: #DEE2E6;
+$color-medium: #6C757D;
+$color-dark: #495057;
+$color-darkest: #212529;
+
+/* classes */
+.color-background {
+    background-color: $color-lightest;
+}
+
+.color-light {
+    background-color: $color-light;
+}
+
+.color-medium {
+    background-color: $color-medium;
+}
+
+.color-dark {
+    background-color: $color-dark;
+}
+
+.color-darkest {
+    background-color: $color-darkest;
+}
+
+/* font sizes */
+.font-large {
+    font-size: 24px;
+}
+
+.font-medium {
+    font-size: 16px;
+}
+
+.number-turner {
+    font-size: 3rem;
+}
+
+.prep-ratio-data-font {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* menu styling */
+
+/* search bar icon */
+.search-bar-label {
+    position: relative;
+    width: 100%;
+}
+
+.search-bar-label:before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    width: 24px;
+    background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search"%3E%3Ccircle cx="11" cy="11" r="8"/%3E%3Cpath d="m21 21-4.3-4.3"/%3E%3C/svg%3E') center / contain no-repeat;
+}
+
+input.search-bar-input, textarea {
+    padding: 0.5rem 2.5rem;
+    border: none;
+    background-color: $color-light;
+    width: 100%;
+}
+
+input.data-text-input, textarea {
+    border: none;
+    background-color: $color-light;
+    text-align: right;
+    font-weight: 600;
+}
+
+/* buttons */
+button {
+    background: none;
+    border: none;
+}
+
+button:hover {
+    background-color: lighten($color: $color-medium, $amount: 25);
+}
+
+// todo: figure out how to remove menu button hover effect
+
+@import './bootstrap-5.3.3/scss/bootstrap.scss'
