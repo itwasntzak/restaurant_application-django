@@ -151,5 +151,3 @@ function prepListItemExpanded() {
     );
     return mainDiv;
 }
-
-document.body.prepend( prepListItemExpanded(), prepListItemExpanded() );

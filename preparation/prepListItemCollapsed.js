@@ -1,5 +1,5 @@
 
-function prepListItemCollapsed(itemName='Item Name', prepData=0, haveData=0) {
+export function prepListItemCollapsed(itemName='Item Name', prepData=0, haveData=0) {
     function infoCol(label, data) {
         let template = document.createElement('template');
         let pString = '<p class="m-0"></p>';
@@ -26,9 +26,9 @@ function prepListItemCollapsed(itemName='Item Name', prepData=0, haveData=0) {
     let infoRow = document.createElement('div');
     infoRow.classList.add('row', 'justify-content-end');
     // prep
-    infoRow.appendChild(infoCol(label = 'Prep', data = prepData));
+    infoRow.appendChild(infoCol('Prep', prepData));
     // have
-    infoRow.appendChild(infoCol(label = 'Have', data = haveData));
+    infoRow.appendChild(infoCol('Have', haveData));
     // info column
     let infoColumn = document.createElement('div');
     infoColumn.classList.add('col-auto', 'pe-3', 'pt-2',
@@ -47,7 +47,7 @@ function prepListItemCollapsed(itemName='Item Name', prepData=0, haveData=0) {
 
     // container row
     let containerRow = document.createElement('div');
-    containerRow.classList.add('row', 'm-5', 'bg-danger', 'rounded-4');
+    containerRow.classList.add('row', 'm-4', 'bg-danger', 'rounded-4');
     containerRow.appendChild(itemNameCol);
     containerRow.appendChild(infoColumn);
 
