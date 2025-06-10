@@ -31,7 +31,7 @@ export function prepListItemCollapsed(itemName='Item Name', prepData=0, haveData
     infoRow.appendChild(infoCol('Have', haveData));
     // info column
     let infoColumn = document.createElement('div');
-    infoColumn.classList.add('col-auto', 'pe-3', 'pt-2',
+    infoColumn.classList.add('col-auto', 'pe-3', 'py-2',
                              'text-light', 'text-center');
     infoColumn.appendChild(infoRow);
 
@@ -41,13 +41,14 @@ export function prepListItemCollapsed(itemName='Item Name', prepData=0, haveData
     itemNameP.innerHTML = itemName;
     // item name column
     let itemNameCol = document.createElement('div');
-    itemNameCol.classList.add('col', 'ps-3', 'pt-2', 'pb-4',
+    // itemNameCol.classList.add('col', 'ps-3', 'pt-2', 'pb-4',
+    itemNameCol.classList.add('col', 'ps-3', 'pt-1',
                               'rounded-4', 'color-dark');
     itemNameCol.appendChild(itemNameP);
 
     // container row
     let containerRow = document.createElement('div');
-    containerRow.classList.add('row', 'm-4', 'bg-danger', 'rounded-4');
+    containerRow.classList.add('row', 'my-2', 'mx-4', 'bg-danger', 'rounded-4');
     containerRow.appendChild(itemNameCol);
     containerRow.appendChild(infoColumn);
 
